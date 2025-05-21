@@ -6,8 +6,9 @@ import LoginPage from './pages/LoginPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import CategoryPage from "./pages/CategoryPage.jsx"
 import SeriePage from "./pages/SeriePage.jsx"
-import SerieFormPage from "./pages/SerieFormPage"
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import SerieFormPage from "./pages/SerieFormPage.jsx"
+import { BrowserRouter,Routes, Route } from 'react-router-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,11 +16,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/categories" element={<CategoryPage />} />
-        <Route path="/series" element={<SeriePage />} />
-        <Route path="/series/new" element={<SerieFormPage />} />
+        <Route path= "/" element={<LoginPage/>}/>
+        <Route path= "/home" element={<HomePage/>}/>
+        <Route path= "/categories" element={<CategoryPage/>}/>
+        <Route path= "/series" element={<SeriePage/>}/>
+        <Route path= '/series/edit/:idserie' element={<SerieFormPage/>}/>
       </Routes>
     </BrowserRouter>
   )
