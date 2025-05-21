@@ -1,18 +1,21 @@
-import HeaderComponent from "../components/HeaderComponent"
+import HeaderComponent from "../components/HeaderComponent";
+
+function HomePage() {
+  return (
+    <>
+      <HeaderComponent />
 
 
-function HomePage(){
-      return (
-        <>
-            <HeaderComponent />
-            <div className="container mt-3">
-                <div className="border-bottom pb-3 mb-3">
-                    <h3>Home</h3>
-                </div>
-            </div>
-        </>
-      )
+      <div className="container-fluid px-0">
+        <img
+          src="/images//banner.jpg"
+          alt="Banner principal"
+          className="img-fluid w-100"
+          style={{ objectFit: "cover", maxHeight: "500px" }}
+        />
+      </div>
+    </>
+  );
 }
 
-
-export default HomePage
+export default HomePage;
