@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LoginPage from './pages/LoginPage.jsx'
 import HomePage from './pages/HomePage.jsx'
+import CategoryPage from "./pages/CategoryPage.jsx"
+import SeriePage from "./pages/SeriePage.jsx"
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 
 
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path= "/" element={<LoginPage/>}/>
         <Route path= "/home" element={<HomePage/>}/>
+        <Route path= "/categories" element={<CategoryPage/>}/>
+        <Route path= "/series" element={<SeriePage/>}/>
       </Routes>
     </BrowserRouter>
   );
