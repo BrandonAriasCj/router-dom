@@ -23,7 +23,7 @@ function App() {
         <Route path= '/series/edit/:idserie' element={<SerieFormPage/>}/>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App
